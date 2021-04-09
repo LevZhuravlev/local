@@ -7,14 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60092AA4261F0FD8006A7F23 /* MainDescriptionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60092AA3261F0FD8006A7F23 /* MainDescriptionTextField.swift */; };
+		600F940F261E02FB00B5A6C3 /* roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600F940E261E02FB00B5A6C3 /* roboto.ttf */; };
+		600F9410261E02FB00B5A6C3 /* roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600F940E261E02FB00B5A6C3 /* roboto.ttf */; };
+		600F9411261E02FB00B5A6C3 /* roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600F940E261E02FB00B5A6C3 /* roboto.ttf */; };
 		60660BDB261B35C200E5F673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660BDA261B35C200E5F673 /* AppDelegate.swift */; };
 		60660BDD261B35C200E5F673 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660BDC261B35C200E5F673 /* SceneDelegate.swift */; };
-		60660BDF261B35C200E5F673 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660BDE261B35C200E5F673 /* ViewController.swift */; };
+		60660BDF261B35C200E5F673 /* MainCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660BDE261B35C200E5F673 /* MainCardViewController.swift */; };
 		60660BE2261B35C200E5F673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60660BE0261B35C200E5F673 /* Main.storyboard */; };
 		60660BE4261B35C600E5F673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60660BE3261B35C600E5F673 /* Assets.xcassets */; };
 		60660BE7261B35C600E5F673 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60660BE5261B35C600E5F673 /* LaunchScreen.storyboard */; };
 		60660BF2261B35C700E5F673 /* localTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660BF1261B35C700E5F673 /* localTests.swift */; };
 		60660BFD261B35C700E5F673 /* localUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660BFC261B35C700E5F673 /* localUITests.swift */; };
+		60660C2D261B3DDC00E5F673 /* MainCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660BDE261B35C200E5F673 /* MainCardViewController.swift */; };
+		60660C31261B3DDC00E5F673 /* MainCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660BDE261B35C200E5F673 /* MainCardViewController.swift */; };
+		60864A81261C6F0B005820C7 /* MainCardBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4328261B8DD200D026F0 /* MainCardBottom.swift */; };
+		60864A82261C6F0C005820C7 /* MainCardBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4328261B8DD200D026F0 /* MainCardBottom.swift */; };
+		60864A83261C6F0D005820C7 /* MainCardBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4328261B8DD200D026F0 /* MainCardBottom.swift */; };
+		60864A8A261C756A005820C7 /* MainDescritionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4345261C2A3600D026F0 /* MainDescritionCardView.swift */; };
+		60864A8B261C756A005820C7 /* MainDescritionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4345261C2A3600D026F0 /* MainDescritionCardView.swift */; };
+		60864A8C261C756B005820C7 /* MainDescritionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4345261C2A3600D026F0 /* MainDescritionCardView.swift */; };
+		60864AA6261C8827005820C7 /* MainCardImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4321261B8BF100D026F0 /* MainCardImageGallery.swift */; };
+		60864AA7261C8828005820C7 /* MainCardImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4321261B8BF100D026F0 /* MainCardImageGallery.swift */; };
+		60864AAB261C8828005820C7 /* MainCardImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4321261B8BF100D026F0 /* MainCardImageGallery.swift */; };
+		60864AB8261C889A005820C7 /* MainCardViewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660C1D261B3D8A00E5F673 /* MainCardViewSetting.swift */; };
+		60864AB9261C889B005820C7 /* MainCardViewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660C1D261B3D8A00E5F673 /* MainCardViewSetting.swift */; };
+		60864ABD261C889B005820C7 /* MainCardViewSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660C1D261B3D8A00E5F673 /* MainCardViewSetting.swift */; };
+		60864AC2261CA509005820C7 /* MainFullDescriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864AC1261CA509005820C7 /* MainFullDescriptionCardView.swift */; };
+		60864AC3261CA509005820C7 /* MainFullDescriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864AC1261CA509005820C7 /* MainFullDescriptionCardView.swift */; };
+		60864AC4261CA509005820C7 /* MainFullDescriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864AC1261CA509005820C7 /* MainFullDescriptionCardView.swift */; };
+		60864ACC261CA63C005820C7 /* MainCardScrollDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864ACB261CA63C005820C7 /* MainCardScrollDelegate.swift */; };
+		60864ACD261CA63C005820C7 /* MainCardScrollDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864ACB261CA63C005820C7 /* MainCardScrollDelegate.swift */; };
+		60864ACE261CA63C005820C7 /* MainCardScrollDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864ACB261CA63C005820C7 /* MainCardScrollDelegate.swift */; };
+		60864ADB261D73E5005820C7 /* Robotic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60864AD7261D73E4005820C7 /* Robotic.ttf */; };
+		60864ADC261D73E5005820C7 /* Robotic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60864AD7261D73E4005820C7 /* Robotic.ttf */; };
+		60864ADD261D73E5005820C7 /* Robotic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60864AD7261D73E4005820C7 /* Robotic.ttf */; };
+		60864AEC261D74D1005820C7 /* tagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864AEB261D74D1005820C7 /* tagView.swift */; };
+		60864AED261D74D1005820C7 /* tagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864AEB261D74D1005820C7 /* tagView.swift */; };
+		60864AEE261D74D1005820C7 /* tagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864AEB261D74D1005820C7 /* tagView.swift */; };
+		60864AF6261D8307005820C7 /* MainFullDescriptionStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864AF5261D8307005820C7 /* MainFullDescriptionStackView.swift */; };
+		60864AF7261D8307005820C7 /* MainFullDescriptionStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864AF5261D8307005820C7 /* MainFullDescriptionStackView.swift */; };
+		60864AF8261D8307005820C7 /* MainFullDescriptionStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864AF5261D8307005820C7 /* MainFullDescriptionStackView.swift */; };
+		60864B03261DB6FB005820C7 /* MainDescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864B02261DB6FB005820C7 /* MainDescriptionText.swift */; };
+		60864B04261DB6FB005820C7 /* MainDescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864B02261DB6FB005820C7 /* MainDescriptionText.swift */; };
+		60864B05261DB6FC005820C7 /* MainDescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864B02261DB6FB005820C7 /* MainDescriptionText.swift */; };
+		60CE4356261C312300D026F0 /* DesriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4338261B8F0700D026F0 /* DesriptionCardView.swift */; };
+		60CE4357261C312400D026F0 /* DesriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4338261B8F0700D026F0 /* DesriptionCardView.swift */; };
+		60CE4358261C312400D026F0 /* DesriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4338261B8F0700D026F0 /* DesriptionCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +74,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		60092AA3261F0FD8006A7F23 /* MainDescriptionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDescriptionTextField.swift; sourceTree = "<group>"; };
+		600F940E261E02FB00B5A6C3 /* roboto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto.ttf; sourceTree = "<group>"; };
 		60660BD7261B35C200E5F673 /* local.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = local.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60660BDA261B35C200E5F673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60660BDC261B35C200E5F673 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		60660BDE261B35C200E5F673 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		60660BDE261B35C200E5F673 /* MainCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardViewController.swift; sourceTree = "<group>"; };
 		60660BE1261B35C200E5F673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		60660BE3261B35C600E5F673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60660BE6261B35C600E5F673 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +90,17 @@
 		60660BF8261B35C700E5F673 /* localUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = localUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60660BFC261B35C700E5F673 /* localUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localUITests.swift; sourceTree = "<group>"; };
 		60660BFE261B35C700E5F673 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60660C1D261B3D8A00E5F673 /* MainCardViewSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardViewSetting.swift; sourceTree = "<group>"; };
+		60864AC1261CA509005820C7 /* MainFullDescriptionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFullDescriptionCardView.swift; sourceTree = "<group>"; };
+		60864ACB261CA63C005820C7 /* MainCardScrollDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardScrollDelegate.swift; sourceTree = "<group>"; };
+		60864AD7261D73E4005820C7 /* Robotic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Robotic.ttf; sourceTree = "<group>"; };
+		60864AEB261D74D1005820C7 /* tagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tagView.swift; sourceTree = "<group>"; };
+		60864AF5261D8307005820C7 /* MainFullDescriptionStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFullDescriptionStackView.swift; sourceTree = "<group>"; };
+		60864B02261DB6FB005820C7 /* MainDescriptionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDescriptionText.swift; sourceTree = "<group>"; };
+		60CE4321261B8BF100D026F0 /* MainCardImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardImageGallery.swift; sourceTree = "<group>"; };
+		60CE4328261B8DD200D026F0 /* MainCardBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardBottom.swift; sourceTree = "<group>"; };
+		60CE4338261B8F0700D026F0 /* DesriptionCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesriptionCardView.swift; sourceTree = "<group>"; };
+		60CE4345261C2A3600D026F0 /* MainDescritionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDescritionCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +128,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60092AA8261F1022006A7F23 /* FullSizeDescriptionText */ = {
+			isa = PBXGroup;
+			children = (
+				60864B02261DB6FB005820C7 /* MainDescriptionText.swift */,
+				60092AA3261F0FD8006A7F23 /* MainDescriptionTextField.swift */,
+			);
+			path = FullSizeDescriptionText;
+			sourceTree = "<group>";
+		};
+		60092AB8261F1429006A7F23 /* DescriptionCard */ = {
+			isa = PBXGroup;
+			children = (
+				60CE4338261B8F0700D026F0 /* DesriptionCardView.swift */,
+				60CE4345261C2A3600D026F0 /* MainDescritionCardView.swift */,
+				60864AC1261CA509005820C7 /* MainFullDescriptionCardView.swift */,
+				60864AF5261D8307005820C7 /* MainFullDescriptionStackView.swift */,
+			);
+			path = DescriptionCard;
+			sourceTree = "<group>";
+		};
 		60660BCE261B35C200E5F673 = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +173,7 @@
 			children = (
 				60660BDA261B35C200E5F673 /* AppDelegate.swift */,
 				60660BDC261B35C200E5F673 /* SceneDelegate.swift */,
-				60660BDE261B35C200E5F673 /* ViewController.swift */,
+				60660C19261B3D7500E5F673 /* CardView */,
 				60660BE0261B35C200E5F673 /* Main.storyboard */,
 				60660BE3261B35C600E5F673 /* Assets.xcassets */,
 				60660BE5261B35C600E5F673 /* LaunchScreen.storyboard */,
@@ -126,6 +198,39 @@
 				60660BFE261B35C700E5F673 /* Info.plist */,
 			);
 			path = localUITests;
+			sourceTree = "<group>";
+		};
+		60660C19261B3D7500E5F673 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				60864AD3261D73E4005820C7 /* Fonts */,
+				60660BDE261B35C200E5F673 /* MainCardViewController.swift */,
+				60660C1D261B3D8A00E5F673 /* MainCardViewSetting.swift */,
+				60864ACB261CA63C005820C7 /* MainCardScrollDelegate.swift */,
+				60CE4321261B8BF100D026F0 /* MainCardImageGallery.swift */,
+				60CE4328261B8DD200D026F0 /* MainCardBottom.swift */,
+				60092AB8261F1429006A7F23 /* DescriptionCard */,
+				60864AEA261D74D1005820C7 /* TagView */,
+				60092AA8261F1022006A7F23 /* FullSizeDescriptionText */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		60864AD3261D73E4005820C7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				60864AD7261D73E4005820C7 /* Robotic.ttf */,
+				600F940E261E02FB00B5A6C3 /* roboto.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		60864AEA261D74D1005820C7 /* TagView */ = {
+			isa = PBXGroup;
+			children = (
+				60864AEB261D74D1005820C7 /* tagView.swift */,
+			);
+			path = TagView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +337,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				60660BE7261B35C600E5F673 /* LaunchScreen.storyboard in Resources */,
+				600F940F261E02FB00B5A6C3 /* roboto.ttf in Resources */,
 				60660BE4261B35C600E5F673 /* Assets.xcassets in Resources */,
 				60660BE2261B35C200E5F673 /* Main.storyboard in Resources */,
+				60864ADB261D73E5005820C7 /* Robotic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +348,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60864ADC261D73E5005820C7 /* Robotic.ttf in Resources */,
+				600F9410261E02FB00B5A6C3 /* roboto.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +357,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60864ADD261D73E5005820C7 /* Robotic.ttf in Resources */,
+				600F9411261E02FB00B5A6C3 /* roboto.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +369,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60660BDF261B35C200E5F673 /* ViewController.swift in Sources */,
+				60660BDF261B35C200E5F673 /* MainCardViewController.swift in Sources */,
+				60092AA4261F0FD8006A7F23 /* MainDescriptionTextField.swift in Sources */,
+				60CE4356261C312300D026F0 /* DesriptionCardView.swift in Sources */,
+				60864ACC261CA63C005820C7 /* MainCardScrollDelegate.swift in Sources */,
 				60660BDB261B35C200E5F673 /* AppDelegate.swift in Sources */,
+				60864A82261C6F0C005820C7 /* MainCardBottom.swift in Sources */,
+				60864AB8261C889A005820C7 /* MainCardViewSetting.swift in Sources */,
+				60864AC2261CA509005820C7 /* MainFullDescriptionCardView.swift in Sources */,
+				60864A8A261C756A005820C7 /* MainDescritionCardView.swift in Sources */,
 				60660BDD261B35C200E5F673 /* SceneDelegate.swift in Sources */,
+				60864AA7261C8828005820C7 /* MainCardImageGallery.swift in Sources */,
+				60864B03261DB6FB005820C7 /* MainDescriptionText.swift in Sources */,
+				60864AF6261D8307005820C7 /* MainFullDescriptionStackView.swift in Sources */,
+				60864AEC261D74D1005820C7 /* tagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +390,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60864AF7261D8307005820C7 /* MainFullDescriptionStackView.swift in Sources */,
+				60864A81261C6F0B005820C7 /* MainCardBottom.swift in Sources */,
+				60864B04261DB6FB005820C7 /* MainDescriptionText.swift in Sources */,
+				60864A8B261C756A005820C7 /* MainDescritionCardView.swift in Sources */,
+				60864AB9261C889B005820C7 /* MainCardViewSetting.swift in Sources */,
 				60660BF2261B35C700E5F673 /* localTests.swift in Sources */,
+				60660C2D261B3DDC00E5F673 /* MainCardViewController.swift in Sources */,
+				60864ACD261CA63C005820C7 /* MainCardScrollDelegate.swift in Sources */,
+				60CE4358261C312400D026F0 /* DesriptionCardView.swift in Sources */,
+				60864AED261D74D1005820C7 /* tagView.swift in Sources */,
+				60864AAB261C8828005820C7 /* MainCardImageGallery.swift in Sources */,
+				60864AC3261CA509005820C7 /* MainFullDescriptionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +409,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60864AF8261D8307005820C7 /* MainFullDescriptionStackView.swift in Sources */,
+				60864A83261C6F0D005820C7 /* MainCardBottom.swift in Sources */,
+				60864B05261DB6FC005820C7 /* MainDescriptionText.swift in Sources */,
+				60864A8C261C756B005820C7 /* MainDescritionCardView.swift in Sources */,
+				60864ABD261C889B005820C7 /* MainCardViewSetting.swift in Sources */,
 				60660BFD261B35C700E5F673 /* localUITests.swift in Sources */,
+				60660C31261B3DDC00E5F673 /* MainCardViewController.swift in Sources */,
+				60864ACE261CA63C005820C7 /* MainCardScrollDelegate.swift in Sources */,
+				60CE4357261C312400D026F0 /* DesriptionCardView.swift in Sources */,
+				60864AEE261D74D1005820C7 /* tagView.swift in Sources */,
+				60864AA6261C8827005820C7 /* MainCardImageGallery.swift in Sources */,
+				60864AC4261CA509005820C7 /* MainFullDescriptionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,10 +587,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.local;
+				PRODUCT_BUNDLE_IDENTIFIER = me.localApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,10 +606,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = me.local;
+				PRODUCT_BUNDLE_IDENTIFIER = me.localApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
