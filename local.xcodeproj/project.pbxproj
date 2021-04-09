@@ -155,6 +155,7 @@
 		60660BCE261B35C200E5F673 = {
 			isa = PBXGroup;
 			children = (
+				605E53B72620A4B10001A84E /* README.md */,
 				60660BD9261B35C200E5F673 /* local */,
 				60660BF0261B35C700E5F673 /* localTests */,
 				60660BFB261B35C700E5F673 /* localUITests */,
@@ -182,7 +183,6 @@
 				60660BE3261B35C600E5F673 /* Assets.xcassets */,
 				60660BE5261B35C600E5F673 /* LaunchScreen.storyboard */,
 				60660BE8261B35C600E5F673 /* Info.plist */,
-				605E53B72620A4B10001A84E /* README.md */,
 			);
 			path = local;
 			sourceTree = "<group>";
