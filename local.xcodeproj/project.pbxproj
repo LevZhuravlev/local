@@ -11,6 +11,9 @@
 		600F940F261E02FB00B5A6C3 /* roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600F940E261E02FB00B5A6C3 /* roboto.ttf */; };
 		600F9410261E02FB00B5A6C3 /* roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600F940E261E02FB00B5A6C3 /* roboto.ttf */; };
 		600F9411261E02FB00B5A6C3 /* roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 600F940E261E02FB00B5A6C3 /* roboto.ttf */; };
+		605E53B82620A4B10001A84E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 605E53B72620A4B10001A84E /* README.md */; };
+		605E53B92620A4B10001A84E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 605E53B72620A4B10001A84E /* README.md */; };
+		605E53BA2620A4B10001A84E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 605E53B72620A4B10001A84E /* README.md */; };
 		60660BDB261B35C200E5F673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660BDA261B35C200E5F673 /* AppDelegate.swift */; };
 		60660BDD261B35C200E5F673 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660BDC261B35C200E5F673 /* SceneDelegate.swift */; };
 		60660BDF261B35C200E5F673 /* MainCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60660BDE261B35C200E5F673 /* MainCardViewController.swift */; };
@@ -76,6 +79,7 @@
 /* Begin PBXFileReference section */
 		60092AA3261F0FD8006A7F23 /* MainDescriptionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDescriptionTextField.swift; sourceTree = "<group>"; };
 		600F940E261E02FB00B5A6C3 /* roboto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = roboto.ttf; sourceTree = "<group>"; };
+		605E53B72620A4B10001A84E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		60660BD7261B35C200E5F673 /* local.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = local.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60660BDA261B35C200E5F673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		60660BDC261B35C200E5F673 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +182,7 @@
 				60660BE3261B35C600E5F673 /* Assets.xcassets */,
 				60660BE5261B35C600E5F673 /* LaunchScreen.storyboard */,
 				60660BE8261B35C600E5F673 /* Info.plist */,
+				605E53B72620A4B10001A84E /* README.md */,
 			);
 			path = local;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605E53B82620A4B10001A84E /* README.md in Resources */,
 				60660BE7261B35C600E5F673 /* LaunchScreen.storyboard in Resources */,
 				600F940F261E02FB00B5A6C3 /* roboto.ttf in Resources */,
 				60660BE4261B35C600E5F673 /* Assets.xcassets in Resources */,
@@ -348,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605E53B92620A4B10001A84E /* README.md in Resources */,
 				60864ADC261D73E5005820C7 /* Robotic.ttf in Resources */,
 				600F9410261E02FB00B5A6C3 /* roboto.ttf in Resources */,
 			);
@@ -357,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				605E53BA2620A4B10001A84E /* README.md in Resources */,
 				60864ADD261D73E5005820C7 /* Robotic.ttf in Resources */,
 				600F9411261E02FB00B5A6C3 /* roboto.ttf in Resources */,
 			);
