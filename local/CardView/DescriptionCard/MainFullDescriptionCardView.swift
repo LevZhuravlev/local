@@ -13,6 +13,8 @@ extension MainCardViewController {
     
   
     func setFullDesription() {
+        descriptionCard.resetBlur()
+
         if isFullDesriptionAvailable {            
             bottomStackHeight.isActive = false
             bottomStackHeight =  bottomViewForStack.heightAnchor.constraint(equalToConstant: view.frame.height - galleryHeight + 10)
@@ -28,7 +30,8 @@ extension MainCardViewController {
            
         
         else {
-            
+            self.descriptionCard.setBlur()
+
             UIView.animate(withDuration: 0.3, animations: {
                 self.mainScrollView.contentOffset.y = 0
             })
@@ -70,11 +73,11 @@ extension MainCardViewController {
         self.despriptionLeading = self.descriptionCard.leadingAnchor.constraint(equalTo: self.mainScrollView.leadingAnchor, constant: 0)
         self.despriptionTrailing = self.descriptionCard.trailingAnchor.constraint(equalTo: self.mainScrollView.trailingAnchor, constant: 0)
         self.bottomStackHeight.isActive = false
-        self.bottomStackHeight = self.bottomViewForStack.heightAnchor.constraint(equalToConstant: 1000)
+        self.bottomStackHeight = self.bottomViewForStack.heightAnchor.constraint(equalToConstant: 1500)
         self.bottomStackHeight.isActive = true
         
         self.descriptionCard.layer.cornerRadius = 0
-        self.desriptionHeight = self.descriptionCard.heightAnchor.constraint(equalToConstant: 1000)
+        self.desriptionHeight = self.descriptionCard.heightAnchor.constraint(equalToConstant: 1500)
         
         self.setFullStack()
 
@@ -84,7 +87,9 @@ extension MainCardViewController {
         self.mainScrollView.layoutIfNeeded()
         
         self.mainScrollView.contentOffset.y = self.imageGalleryScrollLayer.frame.maxY/2
-        self.descriptionCard.backgroundColor = UIColor(red: 0.18, green: 0.18, blue: 0.18, alpha: 1)
+        self.descriptionCard.backgroundColor = UIColor(red: 0.118, green: 0.118, blue: 0.118, alpha: 1)
+        
+        self.tags?.isHidden = true
         
         if let fullDespriptionStack = fullDespriptionStack {
             fullDespriptionStack.isHidden = false
@@ -94,7 +99,7 @@ extension MainCardViewController {
     func hideFullDesription() {
         
         hideFullStack()
-        
+
         self.despriptionLeading = self.descriptionCard.leadingAnchor.constraint(equalTo: self.mainScrollView.leadingAnchor, constant: 0)
         self.despriptionTrailing = self.descriptionCard.trailingAnchor.constraint(equalTo: self.mainScrollView.trailingAnchor, constant: 0)
         self.bottomStackHeight.isActive = false
@@ -107,8 +112,9 @@ extension MainCardViewController {
         self.despriptionTrailing = self.descriptionCard.trailingAnchor.constraint(equalTo: self.mainScrollView.trailingAnchor, constant: -self.paddingForCard)
         self.mainStackView.layoutIfNeeded()
         self.mainScrollView.layoutIfNeeded()
-        self.descriptionCard.backgroundColor = .gray
-        
+
+//        self.descriptionCard.backgroundColor = .gray
+        self.tags?.isHidden = false
     }
     func hideFullStack() {
         

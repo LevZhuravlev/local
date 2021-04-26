@@ -25,6 +25,7 @@ class MainCardViewController: UIViewController {
     var nameLabel: UILabel! 
     var priceLabel: UILabel?
     var tags: TagsWithBar?
+    var infoButton: UIButton!
     
     // Despription Anchor's
     var paddingForCard: CGFloat = 18 
@@ -73,11 +74,33 @@ class MainCardViewController: UIViewController {
         didSet {
             if oldValue != isFullDesriptionAvailable {
                 if oldValue == false {
-            
+                    
+                    
+                    UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseOut) {
+                        self.infoButton.setImage(#imageLiteral(resourceName: "Vector-1"), for: .normal)
+                        self.infoButton.backgroundColor = UIColor(red: 0.18, green: 0.18, blue: 0.18, alpha: 1)
+                        self.infoButton.transform = CGAffineTransform(translationX: -30, y: -30).scaledBy(x:  1.2, y:  1.2)
+                        self.infoButton.layer.cornerRadius = 9
+
+                    }
                 }
+                
                 else {
-        
+                    
+                   
+                    
+
+                    UIView.animate(withDuration: 0.2) {
+                        self.infoButton.setImage(#imageLiteral(resourceName: "info"), for: .normal)
+                        self.infoButton.backgroundColor = .none
+                        self.infoButton.transform =  .identity
+
+                    }
                 }
+                
+                // info button settings
+                
+              
                 
                 setFullDesription()
 
@@ -103,13 +126,20 @@ class MainCardViewController: UIViewController {
         setImageGalleryScrollView()
         setMainCatdBottom()
         setDescrpitionCard()
-        
     
+    }
+    
+    @objc func buttonConnectTouched() {
+        let popUp = PopUp()
+        view.addSubview(popUp)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         mainScrollView.contentOffset.y = 0
     }
+    
+
+
     
 }
 

@@ -54,6 +54,18 @@
 		60864B03261DB6FB005820C7 /* MainDescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864B02261DB6FB005820C7 /* MainDescriptionText.swift */; };
 		60864B04261DB6FB005820C7 /* MainDescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864B02261DB6FB005820C7 /* MainDescriptionText.swift */; };
 		60864B05261DB6FC005820C7 /* MainDescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60864B02261DB6FB005820C7 /* MainDescriptionText.swift */; };
+		60BE0C63262DD2900045B64F /* MainFullDescriptionTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C62262DD2900045B64F /* MainFullDescriptionTagsView.swift */; };
+		60BE0C64262DD2900045B64F /* MainFullDescriptionTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C62262DD2900045B64F /* MainFullDescriptionTagsView.swift */; };
+		60BE0C65262DD2900045B64F /* MainFullDescriptionTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C62262DD2900045B64F /* MainFullDescriptionTagsView.swift */; };
+		60BE0C6A262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C69262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift */; };
+		60BE0C6B262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C69262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift */; };
+		60BE0C6C262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C69262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift */; };
+		60BE0C71262DF6D60045B64F /* MainFullDescriptionContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C70262DF6D60045B64F /* MainFullDescriptionContactsView.swift */; };
+		60BE0C72262DF6D60045B64F /* MainFullDescriptionContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C70262DF6D60045B64F /* MainFullDescriptionContactsView.swift */; };
+		60BE0C73262DF6D60045B64F /* MainFullDescriptionContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C70262DF6D60045B64F /* MainFullDescriptionContactsView.swift */; };
+		60BE0C78262EB9600045B64F /* popUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C77262EB9600045B64F /* popUp.swift */; };
+		60BE0C79262EB9600045B64F /* popUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C77262EB9600045B64F /* popUp.swift */; };
+		60BE0C7A262EB9600045B64F /* popUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C77262EB9600045B64F /* popUp.swift */; };
 		60CE4356261C312300D026F0 /* DesriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4338261B8F0700D026F0 /* DesriptionCardView.swift */; };
 		60CE4357261C312400D026F0 /* DesriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4338261B8F0700D026F0 /* DesriptionCardView.swift */; };
 		60CE4358261C312400D026F0 /* DesriptionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CE4338261B8F0700D026F0 /* DesriptionCardView.swift */; };
@@ -101,6 +113,10 @@
 		60864AEB261D74D1005820C7 /* tagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tagView.swift; sourceTree = "<group>"; };
 		60864AF5261D8307005820C7 /* MainFullDescriptionStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFullDescriptionStackView.swift; sourceTree = "<group>"; };
 		60864B02261DB6FB005820C7 /* MainDescriptionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDescriptionText.swift; sourceTree = "<group>"; };
+		60BE0C62262DD2900045B64F /* MainFullDescriptionTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFullDescriptionTagsView.swift; sourceTree = "<group>"; };
+		60BE0C69262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFullDescriptionPlaylistView.swift; sourceTree = "<group>"; };
+		60BE0C70262DF6D60045B64F /* MainFullDescriptionContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFullDescriptionContactsView.swift; sourceTree = "<group>"; };
+		60BE0C77262EB9600045B64F /* popUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = popUp.swift; sourceTree = "<group>"; };
 		60CE4321261B8BF100D026F0 /* MainCardImageGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardImageGallery.swift; sourceTree = "<group>"; };
 		60CE4328261B8DD200D026F0 /* MainCardBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardBottom.swift; sourceTree = "<group>"; };
 		60CE4338261B8F0700D026F0 /* DesriptionCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesriptionCardView.swift; sourceTree = "<group>"; };
@@ -148,6 +164,10 @@
 				60CE4345261C2A3600D026F0 /* MainDescritionCardView.swift */,
 				60864AC1261CA509005820C7 /* MainFullDescriptionCardView.swift */,
 				60864AF5261D8307005820C7 /* MainFullDescriptionStackView.swift */,
+				60BE0C62262DD2900045B64F /* MainFullDescriptionTagsView.swift */,
+				60BE0C69262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift */,
+				60BE0C70262DF6D60045B64F /* MainFullDescriptionContactsView.swift */,
+				60BE0C77262EB9600045B64F /* popUp.swift */,
 			);
 			path = DescriptionCard;
 			sourceTree = "<group>";
@@ -385,11 +405,15 @@
 				60864A82261C6F0C005820C7 /* MainCardBottom.swift in Sources */,
 				60864AB8261C889A005820C7 /* MainCardViewSetting.swift in Sources */,
 				60864AC2261CA509005820C7 /* MainFullDescriptionCardView.swift in Sources */,
+				60BE0C78262EB9600045B64F /* popUp.swift in Sources */,
 				60864A8A261C756A005820C7 /* MainDescritionCardView.swift in Sources */,
+				60BE0C6A262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift in Sources */,
 				60660BDD261B35C200E5F673 /* SceneDelegate.swift in Sources */,
 				60864AA7261C8828005820C7 /* MainCardImageGallery.swift in Sources */,
+				60BE0C71262DF6D60045B64F /* MainFullDescriptionContactsView.swift in Sources */,
 				60864B03261DB6FB005820C7 /* MainDescriptionText.swift in Sources */,
 				60864AF6261D8307005820C7 /* MainFullDescriptionStackView.swift in Sources */,
+				60BE0C63262DD2900045B64F /* MainFullDescriptionTagsView.swift in Sources */,
 				60864AEC261D74D1005820C7 /* tagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,12 +423,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				60864AF7261D8307005820C7 /* MainFullDescriptionStackView.swift in Sources */,
+				60BE0C6B262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift in Sources */,
 				60864A81261C6F0B005820C7 /* MainCardBottom.swift in Sources */,
 				60864B04261DB6FB005820C7 /* MainDescriptionText.swift in Sources */,
 				60864A8B261C756A005820C7 /* MainDescritionCardView.swift in Sources */,
+				60BE0C64262DD2900045B64F /* MainFullDescriptionTagsView.swift in Sources */,
 				60864AB9261C889B005820C7 /* MainCardViewSetting.swift in Sources */,
 				60660BF2261B35C700E5F673 /* localTests.swift in Sources */,
+				60BE0C72262DF6D60045B64F /* MainFullDescriptionContactsView.swift in Sources */,
 				60660C2D261B3DDC00E5F673 /* MainCardViewController.swift in Sources */,
+				60BE0C79262EB9600045B64F /* popUp.swift in Sources */,
 				60864ACD261CA63C005820C7 /* MainCardScrollDelegate.swift in Sources */,
 				60CE4358261C312400D026F0 /* DesriptionCardView.swift in Sources */,
 				60864AED261D74D1005820C7 /* tagView.swift in Sources */,
@@ -418,12 +446,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				60864AF8261D8307005820C7 /* MainFullDescriptionStackView.swift in Sources */,
+				60BE0C6C262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift in Sources */,
 				60864A83261C6F0D005820C7 /* MainCardBottom.swift in Sources */,
 				60864B05261DB6FC005820C7 /* MainDescriptionText.swift in Sources */,
 				60864A8C261C756B005820C7 /* MainDescritionCardView.swift in Sources */,
+				60BE0C65262DD2900045B64F /* MainFullDescriptionTagsView.swift in Sources */,
 				60864ABD261C889B005820C7 /* MainCardViewSetting.swift in Sources */,
 				60660BFD261B35C700E5F673 /* localUITests.swift in Sources */,
+				60BE0C73262DF6D60045B64F /* MainFullDescriptionContactsView.swift in Sources */,
 				60660C31261B3DDC00E5F673 /* MainCardViewController.swift in Sources */,
+				60BE0C7A262EB9600045B64F /* popUp.swift in Sources */,
 				60864ACE261CA63C005820C7 /* MainCardScrollDelegate.swift in Sources */,
 				60CE4357261C312400D026F0 /* DesriptionCardView.swift in Sources */,
 				60864AEE261D74D1005820C7 /* tagView.swift in Sources */,

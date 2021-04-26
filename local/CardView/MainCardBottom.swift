@@ -33,8 +33,8 @@ extension MainCardViewController {
         let height: CGFloat  = (view.frame.width - leftMargin - rightMargin - spacing)/2
 
                 
-        likeButton.backgroundColor = .systemGreen
-        disLikeButton.backgroundColor = .systemRed
+        likeButton.setImage(#imageLiteral(resourceName: "Like"), for: .normal)
+        disLikeButton.setImage(#imageLiteral(resourceName: "Shit"), for: .normal)
         
         bottomViewForStack.addSubview(stackWithButtons)
         

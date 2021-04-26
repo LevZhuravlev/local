@@ -34,17 +34,20 @@ extension MainCardViewController {
         // Here I set photo's proportion
         imageGalleryScrollView.heightAnchor.constraint(equalToConstant: galleryHeight).isActive = true
         
-        let viewCollection = [UIColor.red, .orange, .yellow]
+        let viewCollection = [UIImage(named: "page1"), UIImage(named: "page2"), UIImage(named: "page 3")]
         
         
         imageGalleryScrollView.contentSize.width = view.frame.width * CGFloat(viewCollection.count)
         imageGalleryScrollView.contentSize.height = galleryHeight
         
 
-        let _ = viewCollection.reduce(into: 0) { (res, color) in
+        let _ = viewCollection.reduce(into: 0) { (res, image) in
 
-            let view = UIView(frame: CGRect(x: CGFloat(res), y: .zero, width: self.view.bounds.width, height:  imageGalleryScrollView.contentSize.height))
-            view.backgroundColor = color
+            let view = UIImageView(frame: CGRect(x: CGFloat(res), y: .zero, width: self.view.bounds.width, height:  imageGalleryScrollView.contentSize.height))
+            
+            view.image = image
+            view.contentMode = .scaleAspectFill
+            view.clipsToBounds = true
             imageGalleryScrollView.addSubview(view)
             res += Int(self.view.bounds.width)
         }

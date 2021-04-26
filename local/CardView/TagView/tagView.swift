@@ -21,10 +21,13 @@ class Tags: UIScrollView, TagView {
     
     
     // MARK: TO-DO: ModelView
-    var tagNameList: [String] = ["Ретро", "Музыка", "18+","Движ", "Концерт", "Краснодар"]
+    var tagNameList: [String] = ["Ретро", "Музыка", "18+","Funk", "Rock", "То", "Это" ,"Движ", "Музыка"]
     lazy var tagList: [UIButton] = tagNameList.map { (text) -> UIButton in
         return self.makeTag(for: text)
     }
+    
+    var tagListSize: [CGSize] = []
+    
     var tagStack = UIStackView()
     
     // Settings For Bar
@@ -42,6 +45,7 @@ class Tags: UIScrollView, TagView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         
         let tagScroll = self
         tagScroll.addSubview(tagStack)
@@ -72,6 +76,7 @@ class Tags: UIScrollView, TagView {
         
         numberOfPages = Int((totalWidth /  UIScreen.main.bounds.width).rounded(.up))
         
+        
 //        let tagBarStackView = setupBarsStackView(numberOfPages: numberOfPages, currentPage: 0, for: tagScroll)
 //        setCurrentPage()
 //        addSubview(tagBarStackView)
@@ -80,13 +85,14 @@ class Tags: UIScrollView, TagView {
             return
         }
     }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
     
     
-    // MARK: - Methods
+    // MARK: - Making Tags
 
     func makeTag(for text: String, isChoosen: Bool = false) -> UIButton {
         
@@ -121,10 +127,12 @@ class Tags: UIScrollView, TagView {
         
         tagButton.setAttributedTitle(attributeString, for: .normal)
         tagButton.tintColor = .red
-
+        
+        tagListSize.append(size)
+        
         
         // Counting of total width
-        totalWidth += size.width + tagStack.spacing
+        totalWidth += size.width + tagStack.spacing + 36
         
         if totalWidth > UIScreen.main.bounds.width {
             needInBar = true
@@ -170,10 +178,6 @@ class TagsWithBar: UIView {
         stackForTagsAndBar.axis = .vertical
         stackForTagsAndBar.spacing = 12
 
-        print(tagScroll.totalWidth, "width")
-        print(tagScroll.numberOfPages, "number of pagges")
-        
-      
         
         
         if tagScroll.needInBar {
@@ -218,14 +222,24 @@ class TagsWithBar: UIView {
             locview.layer.cornerRadius = 2
             barStackView.addArrangedSubview(locview)
             viewsForFlex.append(locview)
-            widthAnchors.append(locview.widthAnchor.constraint(equalToConstant: 10))
+            widthAnchors.append(locview.widthAnchor.constraint(equalToConstant: 4))
         }
         
         
         barStackView.heightAnchor.constraint(equalToConstant: 4).isActive = true
         barStackView.isLayoutMarginsRelativeArrangement = true
         
-        let barStackViewPadding: CGFloat = 130
+        // MARK:  BarWidthSetup
+
+        
+        let n = CGFloat(tagScroll.numberOfPages)
+        
+        let barStackViewPadding: CGFloat = ((UIScreen.main.bounds.width - 36 - 36 - 16 - ((n - 1) * barStackView.arrangedSubviews[0].layer.cornerRadius + (n - 1)*barStackView.spacing + 3 * barStackView.arrangedSubviews[0].layer.cornerRadius))/2).rounded(.down)
+        
+//        let barStackViewPadding: CGFloat = 130
+        
+
+        
         barStackView.layoutMargins = UIEdgeInsets(top: 0, left: barStackViewPadding, bottom: 0, right: barStackViewPadding)
         setCurrentPage()
         
@@ -259,10 +273,7 @@ class TagsWithBar: UIView {
             
         })
     
-    
-
     }
-    
 }
     
 
@@ -270,10 +281,10 @@ class TagsWithBar: UIView {
 extension TagsWithBar: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        let pageIndex = Int((tagScroll.contentOffset.x/tagScroll.frame.width).rounded())
+        let pageIndex = Int((tagScroll.contentOffset.x/tagScroll.frame.width).rounded(.up))
         
 
-        if pageIndex < 0 && pageIndex > tagScroll.numberOfPages - 1 {
+        if pageIndex < 0 || pageIndex > tagScroll.numberOfPages - 1 {
             return
         } else {
             

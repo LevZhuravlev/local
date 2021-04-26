@@ -8,21 +8,32 @@
 import UIKit
 
 
-
-
 class MainFullDescriptionStackView: UIStackView {
     
+    var tags: Tags? = nil
     var desriptionText: MainDesriptionText? = nil
+    var playList: UIStackView? = nil
+    var contacts: UIStackView? = nil
+
     var blueView: UIView? = nil
     
+    
     override init(frame: CGRect) {
-        
-        
         
         super.init(frame: frame)
         
         axis = .vertical
+        spacing = 12
 
+// MARK: -  Tags text
+        
+        tags = Tags()
+        if let _ = tags {
+            setTagsForFullView()
+        }
+
+        
+// MARK: -  Desription text
         desriptionText = MainDesriptionText()
         if let desriptionText = desriptionText {
             addArrangedSubview(desriptionText)
@@ -30,12 +41,27 @@ class MainFullDescriptionStackView: UIStackView {
             desriptionText.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
         }
         
+// MARK: - PlayList
 
+        playList = UIStackView()
         
+        if let _ = playList {
+            setPlayListForFullView()
+        }
+        
+        
+// MARK: -  Contacts
+        
+        contacts = UIStackView()
+        
+        if let _ = contacts {
+            setContactsFullView()
+        }
+        
+
         blueView = UIView()
         
         if let blueView = blueView {
-            blueView.backgroundColor = .systemBlue
             addArrangedSubview(blueView)
             blueView.translatesAutoresizingMaskIntoConstraints = false
         }

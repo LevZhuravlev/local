@@ -11,9 +11,9 @@ extension MainCardViewController {
     
     func setDescrpitionCard() {
     
+
         descriptionCard = DescriptionCardView()
         mainStackView.addSubview(descriptionCard)
-        
         descriptionCard.translatesAutoresizingMaskIntoConstraints = false
         
         despriptionLeading = descriptionCard.leadingAnchor.constraint(equalTo: mainScrollView.leadingAnchor, constant: paddingForCard)
@@ -23,10 +23,21 @@ extension MainCardViewController {
         
         
         // Info button
-        let button = UIButton(frame: CGRect(x: view.frame.maxX - 90, y: 0, width: 45, height: 45))
-        descriptionCard.addSubview(button)
-        button.backgroundColor = .yellow
-        button.addTarget(self, action: #selector(makeActive), for: .touchUpInside)
+        infoButton = UIButton(frame: CGRect(x: (UIScreen.main.bounds.width - UIScreen.main.bounds.width/4), y: (UIScreen.main.bounds.height - UIScreen.main.bounds.height/3), width: 45, height: 45))
+
+        mainStackView.addSubview(infoButton)
+        infoButton.translatesAutoresizingMaskIntoConstraints = false
+        infoButton.topAnchor.constraint(equalTo: descriptionCard.topAnchor, constant: 8).isActive = true
+        infoButton.trailingAnchor.constraint(equalTo: descriptionCard.trailingAnchor, constant: -8).isActive = true
+        infoButton.widthAnchor.constraint(equalToConstant: 45).isActive = true
+        infoButton.heightAnchor.constraint(equalToConstant: 45).isActive = true
+        
+        infoButton.setImage(#imageLiteral(resourceName: "info"), for: .normal)
+        infoButton.addTarget(self, action: #selector(makeActive), for: .touchUpInside)
+        infoButton.imageEdgeInsets = UIEdgeInsets(top: 0,left: 0,bottom: 0,right: 0)
+        infoButton.contentMode = .center
+        infoButton.imageView?.contentMode = .scaleToFill
+
         
         // NameLabel
         nameLabel = UILabel(frame: descriptionCard.frame(forAlignmentRect: CGRect(x: .zero+18, y: .zero, width: 270, height: 80)))
