@@ -49,6 +49,7 @@
 	<array>
 		<string>Robotic.ttf</string>
 		<string>roboto.ttf</string>
+		<string>Roboto-Medium.ttf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>

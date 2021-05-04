@@ -7,79 +7,71 @@
 
 import UIKit
 
-
 class MainFullDescriptionStackView: UIStackView {
-    
-    var tags: Tags? = nil
-    var desriptionText: MainDesriptionText? = nil
-    var playList: UIStackView? = nil
-    var contacts: UIStackView? = nil
 
-    var blueView: UIView? = nil
-    
-    
+    var tags: Tags?
+    var desriptionText: MainDesriptionText?
+    var playList: UIStackView?
+    var contacts: UIStackView?
+
+    var blueView: UIView?
+
     override init(frame: CGRect) {
-        
+
         super.init(frame: frame)
-        
+
         axis = .vertical
         spacing = 12
 
-// MARK: -  Tags text
-        
+// MARK: - Tags text
+
         tags = Tags()
-        if let _ = tags {
+        if tags != nil {
             setTagsForFullView()
         }
 
-        
-// MARK: -  Desription text
+// MARK: - Desription text
         desriptionText = MainDesriptionText()
         if let desriptionText = desriptionText {
             addArrangedSubview(desriptionText)
             desriptionText.translatesAutoresizingMaskIntoConstraints = false
             desriptionText.widthAnchor.constraint(equalTo: widthAnchor).isActive = true
         }
-        
+
 // MARK: - PlayList
 
         playList = UIStackView()
-        
-        if let _ = playList {
+
+        if  playList != nil {
             setPlayListForFullView()
         }
-        
-        
-// MARK: -  Contacts
-        
+
+// MARK: - Contacts
+
         contacts = UIStackView()
-        
-        if let _ = contacts {
+
+        if  contacts != nil {
             setContactsFullView()
         }
-        
 
         blueView = UIView()
-        
+
         if let blueView = blueView {
             addArrangedSubview(blueView)
             blueView.translatesAutoresizingMaskIntoConstraints = false
         }
-       
+
 //        blueView.heightAnchor.constraint(equalToConstant: 100).isActive = true
-        
 
     }
-    
+
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override var isHidden: Bool {
         willSet {
-            
-            
-            
+
             if newValue {
                 desriptionText?.isHidden = true
                 blueView?.isHidden = true
@@ -89,8 +81,8 @@ class MainFullDescriptionStackView: UIStackView {
             }
         }
     }
-    
+
     deinit {
-        
+
     }
 }

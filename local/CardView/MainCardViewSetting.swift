@@ -8,15 +8,14 @@
 import UIKit
 
 extension MainCardViewController {
-    
+
     func setMainScrollView() {
-        
+
         mainScrollView = UIScrollView()
         mainScrollView.backgroundColor = UIColor(red: 0.18, green: 0.18, blue: 0.18, alpha: 1)
-        
+
         view.addSubview(mainScrollView)
-        
-        
+
         mainScrollView.translatesAutoresizingMaskIntoConstraints = false
         mainScrollView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         mainScrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
@@ -24,12 +23,11 @@ extension MainCardViewController {
         mainScrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         mainScrollView.delegate = self
         mainScrollView.bounces = false
-        
-        
+
     }
-    
+
     func setMainStackView() {
-        
+
         mainStackView = UIStackView()
 
         mainStackView.axis = .vertical
@@ -41,16 +39,16 @@ extension MainCardViewController {
         mainStackView.bottomAnchor.constraint(equalTo: mainScrollView.bottomAnchor).isActive = true
         mainStackView.trailingAnchor.constraint(equalTo: mainScrollView.trailingAnchor).isActive = true
         mainStackView.widthAnchor.constraint(equalTo: mainScrollView.widthAnchor).isActive = true
-        
+
     }
-    
+
     func setColorViewInStack(with color: UIColor, height: CGFloat?) {
-        
+
         bottomViewForStack = UIView()
         bottomViewForStack.backgroundColor = color
-         
+
         mainStackView.addArrangedSubview(bottomViewForStack)
-         
+
         if let height = height {
 
             bottomViewForStack.translatesAutoresizingMaskIntoConstraints = false
@@ -58,7 +56,3 @@ extension MainCardViewController {
         }
     }
 }
-
-
-
-

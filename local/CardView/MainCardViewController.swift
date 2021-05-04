@@ -8,34 +8,34 @@
 import UIKit
 
 class MainCardViewController: UIViewController {
-    
+
     // MainView
     var mainScrollView: UIScrollView!
     var mainStackView: UIStackView!
     var needToScrollBack = false
-    
+    // ProfileButton
+    var profileButton: UIButton?
     // Gallery
     var imageGalleryScrollView: UIScrollView!
     var imageGalleryScrollLayer: UIView!
     var barStackView: UIStackView!
     lazy var galleryHeight: CGFloat = view.frame.width * 1.5
-    
+
     // Despription
     var descriptionCard: DescriptionCardView!
-    var nameLabel: UILabel! 
+    var nameLabel: UILabel!
     var priceLabel: UILabel?
     var tags: TagsWithBar?
     var infoButton: UIButton!
-    
     // Despription Anchor's
-    var paddingForCard: CGFloat = 18 
+    var paddingForCard: CGFloat = 18
     var desriptionHeight: NSLayoutConstraint! {
         willSet {
             if let desriptionHeight = desriptionHeight {
                 desriptionHeight.isActive = false
             }
         }
-        
+
         didSet {
             if let desriptionHeight = desriptionHeight {
                 desriptionHeight.isActive = true
@@ -48,7 +48,7 @@ class MainCardViewController: UIViewController {
                 despriptionLeading.isActive = false
             }
         }
-        
+
         didSet {
             if let despriptionLeading = despriptionLeading {
                 despriptionLeading.isActive = true
@@ -61,34 +61,33 @@ class MainCardViewController: UIViewController {
                 despriptionTrailing.isActive = false
             }
         }
-        
+
         didSet {
             if let despriptionTrailing = despriptionTrailing {
                 despriptionTrailing.isActive = true
             }
         }
     }
-
     // Full Despription
     var isFullDesriptionAvailable = false {
         didSet {
             if oldValue != isFullDesriptionAvailable {
                 if oldValue == false {
-                    
-                    
-                    UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 1, options: .curveEaseOut) {
+
+                    UIView.animate(withDuration: 0.4,
+                                   delay: 0,
+                                   usingSpringWithDamping: 0.7,
+                                   initialSpringVelocity: 1, options: .curveEaseOut) {
                         self.infoButton.setImage(#imageLiteral(resourceName: "Vector-1"), for: .normal)
                         self.infoButton.backgroundColor = UIColor(red: 0.18, green: 0.18, blue: 0.18, alpha: 1)
-                        self.infoButton.transform = CGAffineTransform(translationX: -30, y: -30).scaledBy(x:  1.2, y:  1.2)
+                        self.infoButton.transform = CGAffineTransform(
+                            translationX: -30,
+                            y: -30).scaledBy(x: 1.2,
+                                             y: 1.2)
                         self.infoButton.layer.cornerRadius = 9
 
                     }
-                }
-                
-                else {
-                    
-                   
-                    
+                } else {
 
                     UIView.animate(withDuration: 0.2) {
                         self.infoButton.setImage(#imageLiteral(resourceName: "info"), for: .normal)
@@ -97,51 +96,52 @@ class MainCardViewController: UIViewController {
 
                     }
                 }
-                
+
                 // info button settings
-                
-              
-                
+
                 setFullDesription()
 
             }
         }
     }
     var fullDespriptionStack: MainFullDescriptionStackView?
-    
     // Bottom
     var bottomViewForStack: UIView!
     var stackWithButtons: UIStackView!
     var bottomStackHeight: NSLayoutConstraint!
     lazy var bottomHeight: CGFloat = view.frame.height - galleryHeight + 15
-    
-    
-    
-    
+
     override func viewDidLoad() {
+
         super.viewDidLoad()
-                
         setMainScrollView()
         setMainStackView()
+        setProfileButton()
         setImageGalleryScrollView()
         setMainCatdBottom()
         setDescrpitionCard()
-    
+
     }
-    
+
     @objc func buttonConnectTouched() {
         let popUp = PopUp()
         view.addSubview(popUp)
     }
-    
+
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         mainScrollView.contentOffset.y = 0
+
     }
-    
 
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+
+    }
+
 }
-
-
-
