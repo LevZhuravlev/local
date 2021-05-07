@@ -66,9 +66,15 @@
 		60873C262641420100E5C1A5 /* EventRegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873BF82640200300E5C1A5 /* EventRegViewController.swift */; };
 		60873C272641420200E5C1A5 /* EventRegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873BF82640200300E5C1A5 /* EventRegViewController.swift */; };
 		60873C282641420200E5C1A5 /* EventRegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873BF82640200300E5C1A5 /* EventRegViewController.swift */; };
-		60873C3E2641B75E00E5C1A5 /* viewWithRegistrationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C1926408B8100E5C1A5 /* viewWithRegistrationField.swift */; };
-		60873C3F2641B75E00E5C1A5 /* viewWithRegistrationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C1926408B8100E5C1A5 /* viewWithRegistrationField.swift */; };
-		60873C402641B75F00E5C1A5 /* viewWithRegistrationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C1926408B8100E5C1A5 /* viewWithRegistrationField.swift */; };
+		60873C3E2641B75E00E5C1A5 /* EventRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C1926408B8100E5C1A5 /* EventRegistrationView.swift */; };
+		60873C3F2641B75E00E5C1A5 /* EventRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C1926408B8100E5C1A5 /* EventRegistrationView.swift */; };
+		60873C402641B75F00E5C1A5 /* EventRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C1926408B8100E5C1A5 /* EventRegistrationView.swift */; };
+		60873C572642620700E5C1A5 /* EventRegPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C44264260B000E5C1A5 /* EventRegPopUp.swift */; };
+		60873C582642620800E5C1A5 /* EventRegPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C44264260B000E5C1A5 /* EventRegPopUp.swift */; };
+		60873C592642620800E5C1A5 /* EventRegPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C44264260B000E5C1A5 /* EventRegPopUp.swift */; };
+		60873C702642929500E5C1A5 /* EventRegistrationViewDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C5D2642921400E5C1A5 /* EventRegistrationViewDate.swift */; };
+		60873C742642929500E5C1A5 /* EventRegistrationViewDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C5D2642921400E5C1A5 /* EventRegistrationViewDate.swift */; };
+		60873C782642929600E5C1A5 /* EventRegistrationViewDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60873C5D2642921400E5C1A5 /* EventRegistrationViewDate.swift */; };
 		60BE0C63262DD2900045B64F /* MainFullDescriptionTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C62262DD2900045B64F /* MainFullDescriptionTagsView.swift */; };
 		60BE0C64262DD2900045B64F /* MainFullDescriptionTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C62262DD2900045B64F /* MainFullDescriptionTagsView.swift */; };
 		60BE0C65262DD2900045B64F /* MainFullDescriptionTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60BE0C62262DD2900045B64F /* MainFullDescriptionTagsView.swift */; };
@@ -131,7 +137,9 @@
 		60873BC2263C9CA000E5C1A5 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		60873BCC263CC32000E5C1A5 /* settingsPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsPopUp.swift; sourceTree = "<group>"; };
 		60873BF82640200300E5C1A5 /* EventRegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRegViewController.swift; sourceTree = "<group>"; };
-		60873C1926408B8100E5C1A5 /* viewWithRegistrationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewWithRegistrationField.swift; sourceTree = "<group>"; };
+		60873C1926408B8100E5C1A5 /* EventRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRegistrationView.swift; sourceTree = "<group>"; };
+		60873C44264260B000E5C1A5 /* EventRegPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRegPopUp.swift; sourceTree = "<group>"; };
+		60873C5D2642921400E5C1A5 /* EventRegistrationViewDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRegistrationViewDate.swift; sourceTree = "<group>"; };
 		60BE0C62262DD2900045B64F /* MainFullDescriptionTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFullDescriptionTagsView.swift; sourceTree = "<group>"; };
 		60BE0C69262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFullDescriptionPlaylistView.swift; sourceTree = "<group>"; };
 		60BE0C70262DF6D60045B64F /* MainFullDescriptionContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFullDescriptionContactsView.swift; sourceTree = "<group>"; };
@@ -285,7 +293,9 @@
 			isa = PBXGroup;
 			children = (
 				60873BF82640200300E5C1A5 /* EventRegViewController.swift */,
-				60873C1926408B8100E5C1A5 /* viewWithRegistrationField.swift */,
+				60873C1926408B8100E5C1A5 /* EventRegistrationView.swift */,
+				60873C5D2642921400E5C1A5 /* EventRegistrationViewDate.swift */,
+				60873C44264260B000E5C1A5 /* EventRegPopUp.swift */,
 			);
 			path = EventReg;
 			sourceTree = "<group>";
@@ -471,7 +481,8 @@
 				60092AA4261F0FD8006A7F23 /* MainDescriptionTextField.swift in Sources */,
 				60CE4356261C312300D026F0 /* DesriptionCardView.swift in Sources */,
 				60864ACC261CA63C005820C7 /* MainCardScrollDelegate.swift in Sources */,
-				60873C3F2641B75E00E5C1A5 /* viewWithRegistrationField.swift in Sources */,
+				60873C3F2641B75E00E5C1A5 /* EventRegistrationView.swift in Sources */,
+				60873C592642620800E5C1A5 /* EventRegPopUp.swift in Sources */,
 				60660BDB261B35C200E5F673 /* AppDelegate.swift in Sources */,
 				60873C272641420200E5C1A5 /* EventRegViewController.swift in Sources */,
 				60864A82261C6F0C005820C7 /* MainCardBottom.swift in Sources */,
@@ -482,6 +493,7 @@
 				60873BCD263CC32000E5C1A5 /* settingsPopUp.swift in Sources */,
 				60BE0C6A262DF4F50045B64F /* MainFullDescriptionPlaylistView.swift in Sources */,
 				60660BDD261B35C200E5F673 /* SceneDelegate.swift in Sources */,
+				60873C742642929500E5C1A5 /* EventRegistrationViewDate.swift in Sources */,
 				60864AA7261C8828005820C7 /* MainCardImageGallery.swift in Sources */,
 				60BE0C71262DF6D60045B64F /* MainFullDescriptionContactsView.swift in Sources */,
 				60864B03261DB6FB005820C7 /* MainDescriptionText.swift in Sources */,
@@ -507,14 +519,16 @@
 				60660BF2261B35C700E5F673 /* localTests.swift in Sources */,
 				60BE0C72262DF6D60045B64F /* MainFullDescriptionContactsView.swift in Sources */,
 				60873C09264020A000E5C1A5 /* ProfileViewController.swift in Sources */,
+				60873C582642620800E5C1A5 /* EventRegPopUp.swift in Sources */,
 				60660C2D261B3DDC00E5F673 /* MainCardViewController.swift in Sources */,
-				60873C3E2641B75E00E5C1A5 /* viewWithRegistrationField.swift in Sources */,
+				60873C3E2641B75E00E5C1A5 /* EventRegistrationView.swift in Sources */,
 				60873BCE263CC32000E5C1A5 /* settingsPopUp.swift in Sources */,
 				60BE0C79262EB9600045B64F /* popUp.swift in Sources */,
 				60864ACD261CA63C005820C7 /* MainCardScrollDelegate.swift in Sources */,
 				60CE4358261C312400D026F0 /* DesriptionCardView.swift in Sources */,
 				60864AED261D74D1005820C7 /* tagView.swift in Sources */,
 				60864AAB261C8828005820C7 /* MainCardImageGallery.swift in Sources */,
+				60873C702642929500E5C1A5 /* EventRegistrationViewDate.swift in Sources */,
 				60864AC3261CA509005820C7 /* MainFullDescriptionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,14 +548,16 @@
 				60660BFD261B35C700E5F673 /* localUITests.swift in Sources */,
 				60BE0C73262DF6D60045B64F /* MainFullDescriptionContactsView.swift in Sources */,
 				60873C072640209F00E5C1A5 /* ProfileViewController.swift in Sources */,
+				60873C572642620700E5C1A5 /* EventRegPopUp.swift in Sources */,
 				60660C31261B3DDC00E5F673 /* MainCardViewController.swift in Sources */,
-				60873C402641B75F00E5C1A5 /* viewWithRegistrationField.swift in Sources */,
+				60873C402641B75F00E5C1A5 /* EventRegistrationView.swift in Sources */,
 				60873BCF263CC32000E5C1A5 /* settingsPopUp.swift in Sources */,
 				60BE0C7A262EB9600045B64F /* popUp.swift in Sources */,
 				60864ACE261CA63C005820C7 /* MainCardScrollDelegate.swift in Sources */,
 				60CE4357261C312400D026F0 /* DesriptionCardView.swift in Sources */,
 				60864AEE261D74D1005820C7 /* tagView.swift in Sources */,
 				60864AA6261C8827005820C7 /* MainCardImageGallery.swift in Sources */,
+				60873C782642929600E5C1A5 /* EventRegistrationViewDate.swift in Sources */,
 				60864AC4261CA509005820C7 /* MainFullDescriptionCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
